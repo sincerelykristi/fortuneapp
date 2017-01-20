@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#A112B2',
   },
   title: {
-    // flex: 3,
     marginBottom: 50,
     fontSize: 60,
     fontFamily: 'Thonburi-Bold',
@@ -27,10 +26,9 @@ const styles = StyleSheet.create({
     transform: [{ rotate: '-20deg' }],
   },
   message: {
-    // flex: 2,
     fontSize: 20,
     fontFamily: 'Thonburi-Bold',
-    color: '#ffffff'
+    color: '#FFFFFF'
   }
 });
 
