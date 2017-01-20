@@ -14,23 +14,22 @@ const SplashPage = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: '#A112B2',
   },
   title: {
-    justifyContent: 'center',
-    alignItems: 'center',
+    // flex: 3,
+    marginBottom: 50,
     fontSize: 60,
     fontFamily: 'Thonburi-Bold',
-    textAlign: 'center',
-    margin: 10,
     color: '#FFC519',
     transform: [{ rotate: '-20deg' }],
   },
   message: {
-    justifyContent: 'flex-end',
+    // flex: 2,
     fontSize: 20,
     fontFamily: 'Thonburi-Bold',
-    textAlign: 'center',
     color: '#ffffff'
   }
 });
