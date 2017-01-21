@@ -7,8 +7,8 @@ class FortuneList extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.buttons} onPress={Actions.magicEight}>Magic 8 Ball</Text>
-        <Text style={styles.buttons}>Fortune Cookie</Text>
-        <Text style={styles.buttons}>Horoscope</Text>
+        <Text style={styles.buttons} onPress={Actions.fortuneCookie}>Fortune Cookie</Text>
+        <Text style={styles.buttons} onPress={Actions.horoscope}>Horoscope</Text>
       </View>
     );
   }

@@ -9,7 +9,7 @@ class MagicEight extends Component {
         <View style={styles.blackball}>
           <View style={styles.whiteball}><Text style={styles.eight}>8</Text></View>
         </View>
-        <Text style={styles.shake}>Shake to ask your question!</Text>
+        <Text style={styles.shake}>Tap to ask your question!</Text>
       </View>
     );
   }
