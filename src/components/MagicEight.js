@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { Actions } from 'react-native-router-flux';
 
 
 class MagicEight extends Component {
@@ -9,7 +10,12 @@ class MagicEight extends Component {
         <View style={styles.blackball}>
           <View style={styles.whiteball}><Text style={styles.eight}>8</Text></View>
         </View>
-        <Text style={styles.shake}>Tap to ask your question!</Text>
+        <Text
+          style={styles.shake}
+          onPress={Actions.magicEightFront}
+        >
+          Tap to ask your question!
+        </Text>
       </View>
     );
   }

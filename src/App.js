@@ -4,7 +4,9 @@ import { Scene, Router } from 'react-native-router-flux';
 import SplashPage from './components/SplashPage';
 import FortuneList from './components/FortuneList';
 import MagicEight from './components/MagicEight';
+import MagicEightFront from './components/MagicEightFront';
 import FortuneCookie from './components/FortuneCookie';
+import FortuneCookieCracked from './components/FortuneCookieCracked';
 import Horoscope from './components/Horoscope';
 
 class App extends Component {
@@ -31,12 +33,26 @@ class App extends Component {
                component={MagicEight}
         />
         <Scene
+               key="magicEightFront"
+               navigationBarStyle={styles.navBar}
+               titleStyle={styles.navBarTitle}
+               backButtonTextStyle={{ textDecorationColor: '#F16B6F' }}
+               component={MagicEightFront}
+        />
+        <Scene
                key="fortuneCookie"
                title="Fortune Cookie"
                navigationBarStyle={styles.navBar}
                titleStyle={styles.navBarTitle}
                backButtonTextStyle={{ textDecorationColor: '#F16B6F' }}
                component={FortuneCookie}
+        />
+        <Scene
+               key="fortuneCookieCracked"
+               navigationBarStyle={styles.navBar}
+               titleStyle={styles.navBarTitle}
+               backButtonTextStyle={{ textDecorationColor: '#F16B6F' }}
+               component={FortuneCookieCracked}
         />
         <Scene
                key="horoscope"

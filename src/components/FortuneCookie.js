@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
+import { Actions } from 'react-native-router-flux';
 
 class FortuneCookie extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Image source={{ uri: 'https://lh3.ggpht.com/ivrjenAgfdYeqIJwl4KFlZ_FEQyw0Ftaz_PYdA9E24EKaIDSfXCjAlYMKKUkH3He8oc=w300' }} style={{ width: 300, height: 300 }} />
-        <Text style={styles.crack}>Tap to open your Fortune Cookie</Text>
+        <Text
+          style={styles.crack}
+          onPress={Actions.fortuneCookieCracked}
+        >
+        Tap to open your Fortune Cookie
+        </Text>
       </View>
     );
   }
