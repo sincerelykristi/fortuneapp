@@ -8,6 +8,7 @@ import MagicEightFront from './components/MagicEightFront';
 import FortuneCookie from './components/FortuneCookie';
 import FortuneCookieCracked from './components/FortuneCookieCracked';
 import Horoscope from './components/Horoscope';
+import HoroscopeMessage from './components/HoroscopeMessage';
 
 class App extends Component {
   render() {
@@ -61,6 +62,14 @@ class App extends Component {
                titleStyle={styles.navBarTitle}
                backButtonTextStyle={{ textDecorationColor: '#F16B6F' }}
                component={Horoscope}
+        />
+        <Scene
+               key="horoscopeMessage"
+               title="Horoscope"
+               navigationBarStyle={styles.navBar}
+               titleStyle={styles.navBarTitle}
+               backButtonTextStyle={{ textDecorationColor: '#F16B6F' }}
+               component={HoroscopeMessage}
         />
       </Scene>
     </Router>
