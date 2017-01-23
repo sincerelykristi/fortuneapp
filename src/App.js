@@ -8,7 +8,9 @@ import MagicEightFront from './components/MagicEightFront';
 import FortuneCookie from './components/FortuneCookie';
 import FortuneCookieCracked from './components/FortuneCookieCracked';
 import Horoscope from './components/Horoscope';
-import HoroscopeMessage from './components/HoroscopeMessage';
+import HoroscopeAquarius from './components/HoroscopeAquarius';
+import HoroscopePisces from './components/HoroscopePisces';
+import HoroscopeAries from './components/HoroscopeAries';
 
 class App extends Component {
   render() {
@@ -64,12 +66,28 @@ class App extends Component {
                component={Horoscope}
         />
         <Scene
-               key="horoscopeMessage"
-               title="Horoscope"
+               key="horoscopeAquarius"
+               title="Aquarius"
                navigationBarStyle={styles.navBar}
                titleStyle={styles.navBarTitle}
                backButtonTextStyle={{ textDecorationColor: '#F16B6F' }}
-               component={HoroscopeMessage}
+               component={HoroscopeAquarius}
+        />
+        <Scene
+               key="horoscopePisces"
+               title="Pisces"
+               navigationBarStyle={styles.navBar}
+               titleStyle={styles.navBarTitle}
+               backButtonTextStyle={{ textDecorationColor: '#F16B6F' }}
+               component={HoroscopePisces}
+        />
+        <Scene
+               key="horoscopeAries"
+               title="Aries"
+               navigationBarStyle={styles.navBar}
+               titleStyle={styles.navBarTitle}
+               backButtonTextStyle={{ textDecorationColor: '#F16B6F' }}
+               component={HoroscopeAries}
         />
       </Scene>
     </Router>
