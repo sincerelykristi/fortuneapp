@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ScrollView, Text, StyleSheet } from 'react-native';
 //import fetch from 'isomorphic-fetch';
-import fetch from 'fetch';
+//import fetch from 'fetch';
 import { Actions } from 'react-native-router-flux';
 
 class Horoscope extends Component {

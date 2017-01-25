@@ -9,6 +9,7 @@
   "dependencies": {
     "axios": "^0.15.3",
     "es6-promise": "^4.0.5",
+    "fetch": "^1.1.0",
     "isomorphic-fetch": "^2.2.1",
     "react": "15.4.2",
     "react-native": "0.40.0",
