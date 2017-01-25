@@ -2,21 +2,22 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
 
-class HoroscopePisces extends Component {
+class HoroscopeGemini extends Component {
 constructor() {
     super();
     this.state = {
       date: '',
-      sunsign: 'pisces',
+      sunsign: 'gemini',
       horoscope: ''
     };
   }
 
   componentWillMount() {
     fetch(
-      'http://horoscope-api.herokuapp.com/horoscope/today/pisces')
+      'http://horoscope-api.herokuapp.com/horoscope/today/gemini')
       .then((response) => response.json())
       .then((responseData) => {
+        console.log('a');
         const messyDate = responseData.date;
         const section = messyDate.split('-');
         const formattedDate = section[1] + '/' + section[0] + '/' + section[2];
@@ -56,12 +57,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 18,
     fontWeight: 'bold',
-    backgroundColor: '#660198',
     color: '#FFFFFF',
+    backgroundColor: '#660198',
     padding: 10,
     width: 275,
   }
 });
 
 
-export default HoroscopePisces;
+export default HoroscopeGemini;

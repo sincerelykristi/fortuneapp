@@ -7,8 +7,8 @@ class MagicEight extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.blackball}>
-          <View style={styles.whiteball}><Text style={styles.eight}>8</Text></View>
+        <View style={styles.blackball} onPress={Actions.magicEightFront}>
+          <View style={styles.whiteball} onPress={Actions.magicEightFront}><Text style={styles.eight} onPress={Actions.magicEightFront}>8</Text></View>
         </View>
         <Text
           style={styles.shake}

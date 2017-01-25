@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-// import fetch from 'fetch';
 
 
 class HoroscopeAries extends Component {
@@ -18,7 +17,6 @@ constructor() {
       'http://horoscope-api.herokuapp.com/horoscope/today/aries')
       .then((response) => response.json())
       .then((responseData) => {
-        console.log('a');
         const messyDate = responseData.date;
         const section = messyDate.split('-');
         const formattedDate = section[1] + '/' + section[0] + '/' + section[2];
@@ -56,7 +54,9 @@ const styles = StyleSheet.create({
   },
   horoscope: {
     textAlign: 'center',
-    fontSize: 16,
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#FFFFFF',
     backgroundColor: '#660198',
     padding: 10,
     width: 275,

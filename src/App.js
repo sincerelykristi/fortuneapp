@@ -11,6 +11,15 @@ import Horoscope from './components/Horoscope';
 import HoroscopeAquarius from './components/HoroscopeAquarius';
 import HoroscopePisces from './components/HoroscopePisces';
 import HoroscopeAries from './components/HoroscopeAries';
+import HoroscopeTaurus from './components/HoroscopeTaurus';
+import HoroscopeGemini from './components/HoroscopeGemini';
+import HoroscopeCancer from './components/HoroscopeCancer';
+import HoroscopeLeo from './components/HoroscopeLeo';
+import HoroscopeVirgo from './components/HoroscopeVirgo';
+import HoroscopeLibra from './components/HoroscopeLibra';
+import HoroscopeScorpio from './components/HoroscopeScorpio';
+import HoroscopeSagittarius from './components/HoroscopeSagittarius';
+import HoroscopeCapricorn from './components/HoroscopeCapricorn';
 
 class App extends Component {
   render() {
@@ -88,6 +97,78 @@ class App extends Component {
                titleStyle={styles.navBarTitle}
                backButtonTextStyle={{ textDecorationColor: '#F16B6F' }}
                component={HoroscopeAries}
+        />
+        <Scene
+               key="horoscopeTaurus"
+               title="Taurus"
+               navigationBarStyle={styles.navBar}
+               titleStyle={styles.navBarTitle}
+               backButtonTextStyle={{ textDecorationColor: '#F16B6F' }}
+               component={HoroscopeTaurus}
+        />
+        <Scene
+               key="horoscopeGemini"
+               title="Gemini"
+               navigationBarStyle={styles.navBar}
+               titleStyle={styles.navBarTitle}
+               backButtonTextStyle={{ textDecorationColor: '#F16B6F' }}
+               component={HoroscopeGemini}
+        />
+        <Scene
+               key="horoscopeCancer"
+               title="Cancer"
+               navigationBarStyle={styles.navBar}
+               titleStyle={styles.navBarTitle}
+               backButtonTextStyle={{ textDecorationColor: '#F16B6F' }}
+               component={HoroscopeCancer}
+        />
+        <Scene
+               key="horoscopeLeo"
+               title="Leo"
+               navigationBarStyle={styles.navBar}
+               titleStyle={styles.navBarTitle}
+               backButtonTextStyle={{ textDecorationColor: '#F16B6F' }}
+               component={HoroscopeLeo}
+        />
+        <Scene
+               key="horoscopeVirgo"
+               title="Virgo"
+               navigationBarStyle={styles.navBar}
+               titleStyle={styles.navBarTitle}
+               backButtonTextStyle={{ textDecorationColor: '#F16B6F' }}
+               component={HoroscopeVirgo}
+        />
+        <Scene
+               key="horoscopeLibra"
+               title="Libra"
+               navigationBarStyle={styles.navBar}
+               titleStyle={styles.navBarTitle}
+               backButtonTextStyle={{ textDecorationColor: '#F16B6F' }}
+               component={HoroscopeLibra}
+        />
+        <Scene
+               key="horoscopeScorpio"
+               title="Scorpio"
+               navigationBarStyle={styles.navBar}
+               titleStyle={styles.navBarTitle}
+               backButtonTextStyle={{ textDecorationColor: '#F16B6F' }}
+               component={HoroscopeScorpio}
+        />
+        <Scene
+               key="horoscopeSagittarius"
+               title="Sagittarius"
+               navigationBarStyle={styles.navBar}
+               titleStyle={styles.navBarTitle}
+               backButtonTextStyle={{ textDecorationColor: '#F16B6F' }}
+               component={HoroscopeSagittarius}
+        />
+        <Scene
+               key="horoscopeCapricorn"
+               title="Capricorn"
+               navigationBarStyle={styles.navBar}
+               titleStyle={styles.navBarTitle}
+               backButtonTextStyle={{ textDecorationColor: '#F16B6F' }}
+               component={HoroscopeCapricorn}
         />
       </Scene>
     </Router>
