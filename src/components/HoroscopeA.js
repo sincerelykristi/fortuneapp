@@ -2,19 +2,19 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
 
-class HoroscopeLeo extends Component {
+class HoroscopeA extends Component {
 constructor() {
     super();
     this.state = {
       date: '',
-      sunsign: 'leo',
+      sunsign: '',
       horoscope: ''
     };
   }
 
   componentWillMount() {
     fetch(
-      'http://horoscope-api.herokuapp.com/horoscope/today/leo')
+      `http://horoscope-api.herokuapp.com/horoscope/today/${this.props.title}`)
       .then((response) => response.json())
       .then((responseData) => {
         const messyDate = responseData.date;
@@ -22,7 +22,9 @@ constructor() {
         const formattedDate = section[1] + '/' + section[0] + '/' + section[2];
         this.setState({
           date: formattedDate,
-          horoscope: responseData.horoscope });
+          horoscope: responseData.horoscope.replace(/\[|\'/g, ''),
+          sunsign: this.props.title
+        });
       })
       .done();
   }
@@ -64,4 +66,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default HoroscopeLeo;
+export default HoroscopeA;

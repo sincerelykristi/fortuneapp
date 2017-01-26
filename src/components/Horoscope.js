@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { ScrollView, Text, StyleSheet } from 'react-native';
-//import fetch from 'isomorphic-fetch';
-//import fetch from 'fetch';
 import { Actions } from 'react-native-router-flux';
 
 class Horoscope extends Component {
@@ -18,7 +16,6 @@ constructor() {
     fetch('http://horoscope-api.herokuapp.com/horoscope/today/Libra')
       .then((response) => response.json())
       .then((responseData) => {
-        console.log('a');
         const messyDate = responseData.date;
         const section = messyDate.split('-');
         const formattedDate = section[1] + '/' + section[0] + '/' + section[2];
